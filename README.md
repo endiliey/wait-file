@@ -31,13 +31,13 @@ var opts = {
 };
 
 // Usage with callback function
-waitOn(opts, function (err) {
+waitFile(opts, function (err) {
   if (err) { return handleError(err); }
   // once here, all resources are available
 });
 
 // Usage with promises
-waitOn(opts)
+waitFile(opts)
   .then(function () {
     // once here, all resources are available
   })
@@ -47,7 +47,7 @@ waitOn(opts)
 
 // Usage with async await
 try {
-  await waitOn(opts);
+  await waitFile(opts);
   // once here, all resources are available
 } catch (err) {
   handleError(err);
