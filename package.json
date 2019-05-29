@@ -10,7 +10,8 @@
   ],
   "scripts": {
     "start": "tsdx watch",
-    "build": "tsdx build",
+    "build": "tsdx build --target node",
+    "publish": "yarn build && yarn publish",
     "test": "tsdx test"
   },
   "peerDependencies": {},
