@@ -2,6 +2,8 @@
 
 Wait for file resource(s) to become available in Node.js.
 
+[![Build Status](https://travis-ci.com/endiliey/wait-file.svg?branch=master)](https://travis-ci.com/endiliey/wait-file)
+
 ## Installation
 
 ```bash
