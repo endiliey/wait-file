@@ -1,6 +1,6 @@
 {
   "name": "wait-file",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "umd:main": "dist/wait-file.umd.production.js",
   "module": "dist/wait-file.es.production.js",
