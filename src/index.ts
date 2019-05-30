@@ -1,5 +1,5 @@
 import fs from 'fs-extra';
-import Joi from '@hapi/joi';
+import * as Joi from '@hapi/joi';
 import Rx from 'rx';
 
 export interface Opts {
@@ -192,12 +192,12 @@ function waitFileImpl(oldOpts: Opts, cb: null | ((err?: Error) => any)) {
   );
 }
 
-function waitFile(opts: Opts, cb?: (err?: Error) => any) {
+export function waitFile(opts: Opts, cb?: (err?: Error) => any) {
   if (cb && cb !== undefined) {
     return waitFileImpl(opts, cb);
   } else {
     return new Promise((resolve, reject) => {
-      waitFileImpl(opts, (err) => {
+      waitFileImpl(opts, err => {
         if (err) {
           reject(err);
         } else {
@@ -207,5 +207,3 @@ function waitFile(opts: Opts, cb?: (err?: Error) => any) {
     });
   }
 }
-
-export default waitFile;

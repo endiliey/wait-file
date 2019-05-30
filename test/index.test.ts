@@ -1,7 +1,7 @@
 import fs from 'fs-extra';
 import temp from 'temp';
 import path from 'path';
-import waitFile, { Opts } from '../src';
+import { waitFile, Opts } from '../src';
 
 temp.track(); // cleanup files on exit
 
