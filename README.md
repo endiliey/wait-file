@@ -17,7 +17,7 @@ waitFile(opts, [cb]) - function which triggers resource checks
 - opts - see below example
 - cb(err) - if err is provided then, resource checks did not succeed
 
-Requires Node.js v8.9+
+Requires Node.js v8+
 
 ```javascript
 const { waitFile } = require('wait-file');
@@ -35,7 +35,7 @@ const opts = {
 // Usage with callback function
 waitFile(opts, function(err) {
   if (err) {
-    return handleError(err);
+    return console.error(err);
   }
   // once here, all resources are available
 });
@@ -46,7 +46,7 @@ waitFile(opts)
     // once here, all resources are available
   })
   .catch(function(err) {
-    handleError(err);
+    console.error(err);
   });
 
 // Usage with async await
@@ -54,6 +54,6 @@ try {
   await waitFile(opts);
   // once here, all resources are available
 } catch (err) {
-  handleError(err);
+  console.error(err);
 }
 ```
