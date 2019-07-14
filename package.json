@@ -2,7 +2,6 @@
   "name": "wait-file",
   "version": "1.0.1",
   "main": "dist/index.js",
-  "umd:main": "dist/wait-file.umd.production.js",
   "module": "dist/wait-file.es.production.js",
   "typings": "dist/index.d.ts",
   "files": [
@@ -27,22 +26,22 @@
     "trailingComma": "es5"
   },
   "devDependencies": {
-    "@types/fs-extra": "^7.0.0",
-    "@types/hapi__joi": "^15.0.1",
-    "@types/jest": "^24.0.13",
+    "@types/fs-extra": "^8.0.0",
+    "@types/hapi__joi": "^15.0.2",
+    "@types/jest": "^24.0.15",
     "@types/rx": "^4.1.1",
     "@types/temp": "^0.8.34",
     "husky": "^2.3.0",
     "prettier": "^1.17.1",
     "pretty-quick": "^1.11.0",
     "temp": "^0.9.0",
-    "tsdx": "^0.6.1",
+    "tsdx": "^0.7.2",
     "tslib": "^1.9.3",
-    "typescript": "^3.4.5"
+    "typescript": "^3.5.3"
   },
   "dependencies": {
-    "@hapi/joi": "^15.0.3",
-    "fs-extra": "^8.0.1",
+    "@hapi/joi": "^15.1.0",
+    "fs-extra": "^8.1.0",
     "rx": "^4.1.0"
   }
 }
