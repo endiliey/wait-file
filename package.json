@@ -1,12 +1,21 @@
 {
   "name": "wait-file",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "dist/index.js",
   "module": "dist/wait-file.es.production.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist"
   ],
+  "keywords": [
+    "wait",
+    "wait file",
+    "file polling"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/endiliey/wait-file.git"
+  },
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build --target node",
